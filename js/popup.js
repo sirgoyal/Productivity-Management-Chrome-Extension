@@ -70,7 +70,9 @@ function clickState()
         else 
         {
             newState = false;
-            resetTimeLabels();
+            labelHour.innerText = "00";
+            labelMinute.innerText= "00";
+            labelSeconds.innerText= "00";
             buttonState.innerText = stringOff;
             storage.set({"time" : 0});
             storage.set({"distractions": 0});
